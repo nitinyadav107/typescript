@@ -8,6 +8,16 @@ interface User2 {
 interface User2{
   githubtoken:string
 }
+const myUser4: User2 = {
+  email: "test@gmail.com",
+  name: "test",
+  age: 30,
+  getCoupon(name) {
+    return 10;
+  },
+  githubtoken:"githubtoken"
+}
+
 interface Admin extends User2 {
   role:"super-admin"|"admin"
 }
